@@ -9,7 +9,7 @@ import java.security.InvalidParameterException;
 
 @RestController
 public class DownTimeController {
-    @GetMapping("/downtime/minutes") //Kommentar für irgendwas
+    @GetMapping("/downtime/minutes") //Kommentar für irgendwas hallosss
     public double calculateDowntimeMinutes(@RequestParam double relative) {
         if (relative < 0.0 || relative > 100.0)
             throw new InvalidParameterException();
