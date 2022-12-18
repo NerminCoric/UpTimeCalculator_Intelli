@@ -22,7 +22,7 @@ jobs:
     steps:
     
     - name: Copy to staging
-      run: mkdir statging && cp target/*.jar staging
+      run: mkdir statging && cp C:\Users\nco\IdeaProjects\UpTimeCalculator\out\artifacts\UpTimeCalculator_jar/*.jar staging
     - name: upload
       uses: actions/upload-artifact@v3
       with: 
