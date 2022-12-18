@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import java.security.InvalidParameterException;
 
 public class DownTimeController {
-    @GetMapping("/downtime/minutes")
+    @GetMapping("/downtime/minutes") //Kommentar
     public double calculateDowntimeMinutes(@RequestParam double relative) {
         if (relative < 0.0 || relative > 100.0)
             throw new InvalidParameterException();
