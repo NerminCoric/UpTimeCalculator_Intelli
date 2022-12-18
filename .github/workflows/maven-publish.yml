@@ -20,6 +20,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    
     - name: Copy to staging
       run: mkdir statging && cp target/*.jar staging
     - name: upload
