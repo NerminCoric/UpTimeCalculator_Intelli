@@ -13,6 +13,8 @@ public class UpTimeController {
         double minutesOfMonth = 60*24*30;
         double defineUptimeInPercent = relative /100;
         return minutesOfMonth * defineUptimeInPercent; //uptime in minutes
+
+
     }
 
     @GetMapping("/uptime/hours")

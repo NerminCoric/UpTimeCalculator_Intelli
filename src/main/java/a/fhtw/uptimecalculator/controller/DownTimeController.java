@@ -3,9 +3,11 @@ package a.fhtw.uptimecalculator.controller;
 import jdk.jshell.spi.ExecutionControl;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.security.InvalidParameterException;
 
+@RestController
 public class DownTimeController {
     @GetMapping("/downtime/minutes") //Kommentar
     public double calculateDowntimeMinutes(@RequestParam double relative) {
