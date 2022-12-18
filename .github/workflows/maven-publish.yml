@@ -20,12 +20,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Set up JDK 17
+    - name: Copy to staging
+      run: mkdir statging && cp target/*.jar staging
+    - name: upload
       uses: actions/upload-artifact@v3
-      with:
-        java-version: '17'
-        distribution: 'temurin'
-        cache: maven
-    - name: Build with Maven
-      run: mvn -B package --file pom.xml
+      with: 
+        name: Summenrechner.jar
+        path: staging
